@@ -1,0 +1,34 @@
+body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9001f0;
+  }
+  
+  body form {
+    margin-top: 10%;
+  }
+  
+  #calculator table {
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-box-shadow: 7px 7px 9px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 7px 9px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 7px 9px -2px rgba(0, 0, 0, 0.75);
+  }
+  
+  input {
+    background-color: white;
+    color: black;
+    margin: 2px;
+  }
+  
+  input[type="text"]:hover {
+    cursor: default;
+  }
+  
+  input[type="button"]:hover {
+    background-color:whitesmoke;
+    border-radius: 0;
+  }

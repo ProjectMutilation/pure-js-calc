@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>   
+<head> 
+    <meta charset="utf-8" />
+    <title>Native JS Calc</title>
+    <style type="text/css">
+        #calculator * {font-size: 16px;}
+        #calculator table {border-spacing: 3px; background-color: #34515f; }
+        #calculator table td {border-spacing: 3px;}
+        input.display {width: 150px; text-align: right;}
+        td.buttons {border-top: solid 1px silver;}  
+        input[type= button] {width: 40px; height: 30px;}
+    </style>
+	<link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <form name="calc" id="calculator">
+        <table>
+        <tr>
+        <td style="display: flex; justify-content: space-around; align-items: center;">
+            <input readonly id="display" type="text" name="input" size="16" class="display" value="0">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="color: white; font-size: 12px;">M</div>
+                <div id="memory-indicator" style="background-color: red; border-radius: 35px; height: 5px; width: 5px;"></div>
+            </div>
+        </td>
+        </tr>
+        <tr>
+        <td class="buttons">
+            <input type="button" class="data-memory"  name="M" value="M">
+            <input type="button" class="data-memory-read" name="MR" value="MR">
+            <input type="button" class="data-memory-clear" name="MC" value="MC">
+            <input class="data-all-clear" type="button" name="AC" value="AC">
+            <br>
+            <input class="data-number" type="button" name="one" value="1">
+            <input class="data-number" type="button" name="two" value="2">
+            <input class="data-number" type="button" name="three" value="3">
+            <input class="data-operation" type="button" name="add" value="+">
+            <br>
+            <input class="data-number" type="button" name="four" value="4">
+            <input class="data-number" type="button" name="five" value="5">
+            <input class="data-number" type="button" name="six" value="6">
+            <input class="data-operation" type="button" name="sub" value="-">
+            <br>
+            <input class="data-number" type="button" name="seven" value="7">
+            <input class="data-number" type="button" name="eight" value="8">
+            <input class="data-number" type="button" name="nine" value="9">
+            <input class="data-operation" type="button" name="mul" value="x">
+            <br>
+            <input class="data-delete" type="button" name="clear" value="c">
+            <input class="data-number" type="button" name="zero" value="0">
+            <input class="data-equals" type="button" name="doit" value="=">
+            <input class="data-operation" type="button" name="div"  value="/">
+        </td>
+        </tr>
+        </table>
+
+    </form>
+	<script src="main.js"></script>
+</body>
+</html>
