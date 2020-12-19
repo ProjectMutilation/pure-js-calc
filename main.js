@@ -172,7 +172,7 @@ class Calculator {
 	}
 
 	saveInMemory() {
-		if (this.calcStatus) {
+		if (this.express != 'Infinity' || this.express != '-Infinity' || this.express !='Nan') {
 			this.memory.result = this.express
 			memoryIndicator.style.backgroundColor = 'green'
 		}
@@ -197,8 +197,8 @@ class Calculator {
 	}
 
 	updateDisplay() {
-		if (this.express == 'Infinity' || this.express == '-Infinity' || this.express== 'NaN') {
-			displayInput.value = "ERROR"
+		if (this.express == 'Infinity' || this.express == '-Infinity' || this.express=='NaN') {
+			displayInput.value = "Error"
 			this.resetCalc()
 			this.calcStatus = false
 		}
@@ -253,15 +253,15 @@ equalButton.addEventListener('click', button => {
 })
 
 allClearButton.addEventListener('click', button => {
-	if (Calc.express !== '') {
+	
 		Calc.clearAC()
-	}
+	
 })
 
 deleteButton.addEventListener('click', button => {
-	if (Calc.express !== '') {
+	
 		Calc.clearDisplay()
-	}
+	
 })
 
 memoryButton.addEventListener('click', button => {
