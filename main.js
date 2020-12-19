@@ -197,7 +197,7 @@ class Calculator {
 	}
 
 	updateDisplay() {
-		if (this.express == 'Infinity' || this.express == '-Infinity') {
+		if (this.express == 'Infinity' || this.express == '-Infinity' || this.express== 'NaN') {
 			displayInput.value = "ERROR"
 			this.resetCalc()
 			this.calcStatus = false
