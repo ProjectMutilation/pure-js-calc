@@ -172,7 +172,7 @@ class Calculator {
 	}
 
 	saveInMemory() {
-		if (this.express != 'Infinity' || this.express != '-Infinity' || this.express !='Nan') {
+		if (this.express != 'Infinity' || this.express != '-Infinity' || this.express != 'Nan') {
 			this.memory.result = this.express
 			memoryIndicator.style.backgroundColor = 'green'
 		}
@@ -197,7 +197,7 @@ class Calculator {
 	}
 
 	updateDisplay() {
-		if (this.express == 'Infinity' || this.express == '-Infinity' || this.express=='NaN') {
+		if (this.express == 'Infinity' || this.express == '-Infinity' || this.express == 'NaN') {
 			displayInput.value = "Error"
 			this.resetCalc()
 			this.calcStatus = false
